@@ -23,6 +23,7 @@ namespace AI.AvailabilityTests
         public CheckAvailability(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
+            // Get the instrumentation key from the environment variable
             _telemetryClient = new TelemetryClient(new TelemetryConfiguration(Environment.GetEnvironmentVariable("APPINSIGHTS_INSTRUMENTATIONKEY")));
          
         }
