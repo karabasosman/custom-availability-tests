@@ -12,6 +12,7 @@ namespace AI.AvailabilityTests
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
+            // dependency injection
             builder.Services.AddHttpClient();
         }
     }
